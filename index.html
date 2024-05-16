@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<center>
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initiaal-scale-1">
+    <title>calculator</title>
+    <h1><img src="calculator.png" width="300"></h1>
+<script type="text/javascript">
+
+
+function add()
+{
+  document.f1.t3.value=parseInt(document.f1.t1.value)+parseInt(document.f1.t2.value)   
+}
+ 
+
+function sub()
+{
+  document.f1.t3.value=parseInt(document.f1.t1.value)-parseInt(document.f1.t2.value)   
+}
+
+function mul()
+{
+  document.f1.t3.value=parseInt(document.f1.t1.value)*parseInt(document.f1.t2.value)   
+}
+
+function div()
+{
+  document.f1.t3.value=parseInt(document.f1.t1.value)/parseInt(document.f1.t2.value)   
+}
+
+
+
+</script>
+
+
+
+
+</head>    
+<body>
+
+   <form name=f1>
+   Number 1: <input type="text" name="t1"> <br>
+   Number 2: <input type="text" name="t2"> <br>
+   Result: <input type="text" name="t3"> <br>
+   <Input type="button" name="b1" value="Add" onclick="add()">
+   <Input type="button" name="b2" value="Subtract" onclick="sub()">
+   <Input type="button" name="b3" value="Multiplication" onclick="mul()">
+   <input type="button" name="b4" value="Division" onclick="div()">
+
+   </form>
+</body>
+</center>
+</html>
+        
